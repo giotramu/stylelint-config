@@ -1,0 +1,40 @@
+$sm: 320px;
+$md: 768px;
+$lg: 1440px;
+
+@mixin mq($canvas) {
+  @if $canvas == sm {
+    @media only screen and (min-width: $sm) {
+      @content;
+    }
+  } @else if $canvas == md {
+    @media only screen and (min-width: $md) {
+      @content;
+    }
+  } @else if $canvas == lg {
+    @media only screen and (min-width: $lg) {
+      @content;
+    }
+  }
+}
+
+header {
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 200px;
+
+  h1 {
+    color: #000;
+    font-size: 18px;
+  }
+
+  @include mq(lg) {
+    height: 300px;
+    line-height: 300px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
