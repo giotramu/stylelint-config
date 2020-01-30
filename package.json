@@ -2,7 +2,7 @@
   "name": "@giotramu/stylelint-config",
   "version": "2.0.0",
   "description": "Shareable stylelint config with great defaults. It supports CSS, SCSS and CSS in JS.",
-  "author": "Giovanni Tramutola <info@giotramu.me>",
+  "author": "Giovanni Tramutola <gtramutola@mail.com>",
   "homepage": "https://github.com/giotramu/stylelint-config#readme",
   "license": "MIT",
   "repository": {
