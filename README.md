@@ -17,7 +17,7 @@ Shareable [stylelint] config with great defaults. It supports CSS/PostCSS syntax
     - [With SCSS](#with-scss)
     - [With CSS in JS](#with-css-in-js)
   - [Stylelint CLI](#styelint-cli)
-  - [Extend the config](#extend-the-config)
+  - [Extends the config](#extends-the-config)
   - [Thanks](#Thanks)
   - [Licence](#Licence)
 
@@ -78,9 +78,9 @@ Use the stylelint CLI for linting the supported files. Drop this line into your 
 }
 ```
 
-## Extend the config
+## Extends the config
 
-You can extend the configuration or overrides some rules. More details about the loading mechanism of the configuration are available on the [stylelint documentation][stylelint-doc].
+You can extends the configuration or overrides some rules. More details about the loading mechanism of the configuration are available on the [stylelint documentation][stylelint-doc].
 
 ```js
 module.exports = {
