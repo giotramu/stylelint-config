@@ -6,7 +6,6 @@ Shareable [stylelint] config with great defaults. It supports CSS/PostCSS syntax
 [![Build status][circleci-badge]][circleci]
 [![David][david-dep-badge]][david-dep]
 [![David][david-dev-badge]][david-dev]
-[![David][david-peer-badge]][david-peer]
 
 ## Table of contents
 
@@ -24,7 +23,7 @@ Shareable [stylelint] config with great defaults. It supports CSS/PostCSS syntax
 
 ## Install
 
-Install stylelint and stylelint-config and save them to your **package.json** `devDependencies`:
+Based on the CSS environment you decide to support, read the instructions below and save the devDependencies needed to your **package.json**:
 
 ```sh
 #--- CSS and PostCSS support ---#
@@ -39,7 +38,7 @@ $ npm i -D stylelint stylelint-processor-styled-components @giotramu/stylelint-c
 
 ## Usage
 
-Create a `stylelint.config.js` file in the project root and grab the right configuration based on what you decide to support.
+Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you decide to support.
 
 ### With CSS or PostCSS
 
@@ -112,7 +111,6 @@ MIT
 [david-peer]: https://david-dm.org/giotramu/stylelint-config?type=peer
 [david-dep-badge]: https://badgen.net/david/dep/giotramu/stylelint-config
 [david-dev-badge]: https://badgen.net/david/dev/giotramu/stylelint-config
-[david-peer-badge]: https://badgen.net/david/peer/giotramu/stylelint-config
 [sass-doc]: https://sass-lang.com
 [stylelint]: https://stylelint.io
 [stylelint-declaration-block-no-ignored-properties]: https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties
