@@ -26,14 +26,14 @@ jobs:
           root: ~/stylelint-config
           paths:
             - '*'
-  stylelint_check:
+  lint:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/stylelint-config
       - run: npm run lint:src
 
-  test_config:
+  test:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -45,9 +45,9 @@ workflows:
   build:
     jobs:
       - setup
-      - stylelint_check:
+      - lint:
           requires:
             - setup
-      - test_config:
+      - test:
           requires:
             - setup
