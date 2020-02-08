@@ -1,10 +1,10 @@
 {
-  "[json]": {
-    "editor.formatOnSave": true
-  },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.quickSuggestions": true,
+    "editor.formatOnSave": true
+  },
+  "[json]": {
     "editor.formatOnSave": true
   },
   "[typescript]": {
