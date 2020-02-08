@@ -1,5 +1,6 @@
 version: 2
 
+# --- define aliases
 aliases:
   - &restore-cache-deps
     key: dependency-cache-{{ checksum "package.json" }}-2
@@ -8,46 +9,59 @@ aliases:
     paths:
       - node_modules
 
+# --- define base job's config
 defaults: &defaults
   working_directory: ~/stylelint-config
   docker:
     - image: circleci/node:lts
 
+# --- define jobs
 jobs:
-  setup:
+  installing:
     <<: *defaults
     steps:
       - checkout
       - restore_cache: *restore-cache-deps
-      - run: npm install npm@latest
-      - run: npm install
+      - run:
+          name: Install dependencies
+          command: |-
+            npm install npm@latest
+            npm install
       - save_cache: *save-cache-deps
       - persist_to_workspace:
           root: ~/stylelint-config
           paths:
             - '*'
-  lint:
+
+  checking:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/stylelint-config
-      - run: npm run lint:src
+      - run:
+          name: Run eslint and tsc compiler for catch type errors
+          command: |-
+            npm run check:src
+            npm run lint:src
 
-  test:
+  testing:
     <<: *defaults
     steps:
       - attach_workspace:
           at: ~/stylelint-config
-      - run: npm run test
+      - run:
+          name: Build and test configs
+          command: npm run test
 
+# --- workflows
 workflows:
   version: 2
   build:
     jobs:
-      - setup
-      - lint:
+      - installing
+      - checking:
           requires:
-            - setup
-      - test:
+            - installing
+      - testing:
           requires:
-            - setup
+            - installing

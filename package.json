@@ -1,7 +1,7 @@
 {
   "name": "@giotramu/stylelint-config",
   "version": "2.1.0",
-  "description": "Shareable stylelint config with great defaults. It supports CSS, SCSS and CSS in JS.",
+  "description": "Shareable stylelint config with great defaults.",
   "author": "Giovanni Tramutola <gtramutola@mail.com>",
   "homepage": "https://github.com/giotramu/stylelint-config#readme",
   "license": "MIT",
@@ -26,6 +26,7 @@
     "LICENSE"
   ],
   "scripts": {
+    "check:src": "tsc --noEmit",
     "lint:src": "eslint . --ext .ts,.js",
     "test:css": "stylelint ./test/*.css --config ./test/_config.css.js",
     "test:scss": "stylelint ./test/*.scss --config ./test/_config.scss.js",
@@ -33,7 +34,7 @@
     "pretest": "npm run build",
     "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
     "prebuild": "rm -rf ./dist",
-    "build": "tsc",
+    "build": "tsc --declaration",
     "prepublishOnly": "npm test && npm run build"
   },
   "peerDependencies": {
