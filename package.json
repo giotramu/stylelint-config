@@ -1,8 +1,8 @@
 {
   "name": "@giotramu/stylelint-config",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Shareable stylelint config with great defaults.",
-  "author": "Giovanni Tramutola <gtramutola@mail.com>",
+  "author": "Giovanni Tramutola <https://twitter.com/giotramu>",
   "homepage": "https://github.com/giotramu/stylelint-config#readme",
   "license": "MIT",
   "repository": {

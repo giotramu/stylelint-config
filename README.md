@@ -25,7 +25,7 @@ Shareable [Stylelint] config with great defaults. It supports CSS/PostCSS syntax
 
 Based on the CSS environment you decide to support, read the instructions below and save the devDependencies needed to your **package.json**:
 
-```sh
+```bash
 #--- CSS and PostCSS support ---#
 $ npm i -D stylelint @giotramu/stylelint-config
 
