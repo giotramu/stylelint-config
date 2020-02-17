@@ -13,5 +13,6 @@ update_configs:
 
     # custom commit prefix for prod and development dependencies
     commit_message:
-      prefix: 'chore'
-      include_scope: true
+      prefix: 'chore(deps)'
+      prefix_development: 'chore(dev-deps)'
+      include_scope: false
