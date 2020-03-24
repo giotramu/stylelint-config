@@ -23,7 +23,7 @@ jobs:
           name: Install dependencies
           command: |-
             npm install npm@latest
-            npm install
+            npm ci
       - save_cache: *save-cache-deps
       - persist_to_workspace:
           root: ~/stylelint-config
@@ -37,9 +37,7 @@ jobs:
           at: ~/stylelint-config
       - run:
           name: Run tsc compiler and eslint for catch errors
-          command: |-
-            npm run check:src
-            npm run lint:src
+          command: npm run lint
 
   testing:
     <<: *defaults

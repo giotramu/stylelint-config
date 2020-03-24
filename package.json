@@ -1,6 +1,6 @@
 {
   "name": "@giotramu/stylelint-config",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Shareable stylelint config with great defaults.",
   "author": "giotramu <https://twitter.com/giotramu>",
   "homepage": "https://github.com/giotramu/stylelint-config#readme",
@@ -29,6 +29,7 @@
   "scripts": {
     "check:src": "tsc --noEmit",
     "lint:src": "eslint . --ext .ts,.js",
+    "lint": "npm run check:src && npm run lint:src",
     "test:css": "stylelint ./test/*.css --config ./test/_config.css.js",
     "test:scss": "stylelint ./test/*.scss --config ./test/_config.scss.js",
     "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
@@ -36,7 +37,7 @@
     "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
     "prebuild": "rimraf ./dist",
     "build": "tsc --declaration",
-    "prepublishOnly": "npm test && npm run build"
+    "prepublishOnly": "npm run lint && npm test && npm run build"
   },
   "peerDependencies": {
     "stylelint": "^13.0.0",
