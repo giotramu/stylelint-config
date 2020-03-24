@@ -3,9 +3,9 @@
 Shareable [Stylelint] config with great defaults. It supports CSS/PostCSS syntax, [SCSS language][sass-doc] and some CSS in JS solutions, like [Styled Components](styled-components), [Emotion.js](emotion) or [Linaria](linaria).
 
 [![npm package][npm-badge]][npm]
-[![build status][circleci-badge]][circleci]
+[![build status][ci-badge]][ci]
 [![dependencies][deps-badge]][deps]
-[![dev-dependencies][dev-deps-badge]][dev-deps]
+[![dev-dependencies][devdeps-badge]][devdeps]
 
 ## Table of contents
 
@@ -19,7 +19,7 @@ Shareable [Stylelint] config with great defaults. It supports CSS/PostCSS syntax
   - [Stylelint CLI](#styelint-cli)
   - [Extends the config](#extends-the-config)
   - [Thanks](#thanks)
-  - [Licence](#licence)
+  - [License](#license)
 
 ## Install
 
@@ -44,7 +44,7 @@ Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and
 
 ```js
 module.exports = {
-  extends: '@giotramu/stylelint-config'
+  extends: '@giotramu/stylelint-config',
 };
 ```
 
@@ -52,7 +52,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: '@giotramu/stylelint-config/dist/scss'
+  extends: '@giotramu/stylelint-config/dist/scss',
 };
 ```
 
@@ -60,7 +60,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: '@giotramu/stylelint-config/dist/hybrid'
+  extends: '@giotramu/stylelint-config/dist/hybrid',
 };
 ```
 
@@ -87,8 +87,8 @@ module.exports = {
   extends: '@giotramu/stylelint-config',
   rules: {
     'selector-class-pattern': null,
-    'selector-id-pattern': null
-  }
+    'selector-id-pattern': null,
+  },
 };
 ```
 
@@ -98,18 +98,18 @@ module.exports = {
 - [stylelint-order]
 - [stylelint-scss]
 
-## Licence
+## License
 
-MIT
+[MIT License](./LICENSE)
 
 [npm]: https://www.npmjs.com/package/@giotramu/stylelint-config
-[npm-badge]: https://badgen.net/npm/v/@giotramu/stylelint-config
-[circleci]: https://circleci.com/gh/giotramu/stylelint-config
-[circleci-badge]: https://badgen.net/circleci/github/giotramu/stylelint-config?icon=circleci&label=circleci
+[npm-badge]: https://flat.badgen.net/npm/v/@giotramu/stylelint-config?icon=npm&label=npm%20package
+[ci]: https://circleci.com/gh/giotramu/stylelint-config
+[ci-badge]: https://flat.badgen.net/circleci/github/giotramu/stylelint-config?icon=circleci&label=build
 [deps]: https://david-dm.org/giotramu/stylelint-config
-[deps-badge]: https://badgen.net/david/dep/giotramu/stylelint-config
-[dev-deps]: https://david-dm.org/giotramu/stylelint-config?type=dev
-[dev-deps-badge]: https://badgen.net/david/dev/giotramu/stylelint-config
+[deps-badge]: https://flat.badgen.net/david/dep/giotramu/stylelint-config
+[devdeps]: https://david-dm.org/giotramu/stylelint-config?type=dev
+[devdeps-badge]: https://flat.badgen.net/david/dev/giotramu/stylelint-config
 [sass-doc]: https://sass-lang.com
 [stylelint]: https://stylelint.io
 [stylelint-declaration-block-no-ignored-properties]: https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties
