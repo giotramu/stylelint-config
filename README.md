@@ -5,7 +5,7 @@ Shareable [Stylelint] config with great defaults. It supports CSS/PostCSS syntax
 [![npm package][npm-badge]][npm]
 [![build status][ci-badge]][ci]
 [![dependencies][deps-badge]][deps]
-[![dev-dependencies][devdeps-badge]][devdeps]
+[![dev dependencies][devdeps-badge]][devdeps]
 
 ## Table of contents
 
