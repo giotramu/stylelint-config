@@ -44,7 +44,7 @@ Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and
 
 ```js
 module.exports = {
-  extends: '@giotramu/stylelint-config',
+  extends: '@giotramu/stylelint-config'
 };
 ```
 
@@ -52,7 +52,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: '@giotramu/stylelint-config/dist/scss',
+  extends: '@giotramu/stylelint-config/dist/scss'
 };
 ```
 
@@ -60,7 +60,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: '@giotramu/stylelint-config/dist/hybrid',
+  extends: '@giotramu/stylelint-config/dist/hybrid'
 };
 ```
 
@@ -87,8 +87,8 @@ module.exports = {
   extends: '@giotramu/stylelint-config',
   rules: {
     'selector-class-pattern': null,
-    'selector-id-pattern': null,
-  },
+    'selector-id-pattern': null
+  }
 };
 ```
 
@@ -103,13 +103,13 @@ module.exports = {
 [MIT License](./LICENSE)
 
 [npm]: https://www.npmjs.com/package/@giotramu/stylelint-config
-[npm-badge]: https://flat.badgen.net/npm/v/@giotramu/stylelint-config?icon=npm&label=npm%20package
-[ci]: https://circleci.com/gh/giotramu/stylelint-config
-[ci-badge]: https://flat.badgen.net/circleci/github/giotramu/stylelint-config?icon=circleci&label=build
+[npm-badge]: https://badgen.net/npm/v/@giotramu/stylelint-config?icon=npm&label=npm%20package
+[ci]: https://github.com/giotramu/stylelint-config/actions
+[ci-badge]: https://github.com/giotramu/stylelint-config/workflows/test%20and%20build/badge.svg?branch=master
 [deps]: https://david-dm.org/giotramu/stylelint-config
-[deps-badge]: https://flat.badgen.net/david/dep/giotramu/stylelint-config
+[deps-badge]: https://badgen.net/david/dep/giotramu/stylelint-config
 [devdeps]: https://david-dm.org/giotramu/stylelint-config?type=dev
-[devdeps-badge]: https://flat.badgen.net/david/dev/giotramu/stylelint-config
+[devdeps-badge]: https://badgen.net/david/dev/giotramu/stylelint-config
 [sass-doc]: https://sass-lang.com
 [stylelint]: https://stylelint.io
 [stylelint-declaration-block-no-ignored-properties]: https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties

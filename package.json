@@ -22,8 +22,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "*.md",
+    "dist/",
     "LICENSE"
   ],
   "scripts": {
@@ -34,10 +33,9 @@
     "test:scss": "stylelint ./test/*.scss --config ./test/_config.scss.js",
     "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
     "pretest": "npm run build",
-    "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
+    "test": "run-p test:**",
     "prebuild": "rimraf ./dist",
-    "build": "tsc --declaration",
-    "prepublishOnly": "npm run lint && npm test && npm run build"
+    "build": "tsc --declaration"
   },
   "peerDependencies": {
     "stylelint": "^13.2.1",
@@ -55,6 +53,7 @@
     "eslint-config-contactlab": "^4.2.2",
     "eslint-config-prettier": "^6.10.1",
     "husky": "^4.2.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.0.2",
     "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.2",
