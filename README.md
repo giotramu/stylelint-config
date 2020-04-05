@@ -2,10 +2,10 @@
 
 Shareable [Stylelint] config with great defaults. It supports CSS/PostCSS syntax, [SCSS language][sass-doc] and some CSS in JS solutions, like [Styled Components](styled-components), [Emotion.js](emotion) or [Linaria](linaria).
 
-[![npm package][npm-badge]][npm]
-[![build status][ci-badge]][ci]
-[![dependencies][deps-badge]][deps]
-[![dev dependencies][devdeps-badge]][devdeps]
+[![NPM][npm-badge]][npm]
+[![Build Status][ci-badge]][ci]
+[![Dependencies][deps-badge]][deps]
+[![Dev Dependencies][devdeps-badge]][devdeps]
 
 ## Table of contents
 
