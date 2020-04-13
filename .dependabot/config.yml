@@ -4,12 +4,10 @@ update_configs:
     directory: '/'
     update_schedule: 'weekly'
 
-    default_assignees:
-      - 'dependabot-preview'
-
     default_reviewers: ['giotramu']
 
     default_labels: ['dependencies']
 
     commit_message:
+      prefix: 'chore'
       include_scope: true
