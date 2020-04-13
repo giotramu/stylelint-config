@@ -5,12 +5,11 @@ update_configs:
     update_schedule: 'weekly'
 
     default_assignees:
-      - 'giotramu'
+      - 'dependabot-preview'
 
-    default_labels:
-      - 'dependencies'
+    default_reviewers: ['giotramu']
+
+    default_labels: ['dependencies']
 
     commit_message:
-      include_scope: false
-      prefix: 'chore(deps)'
-      prefix_development: 'chore(dev-deps)'
+      include_scope: true
