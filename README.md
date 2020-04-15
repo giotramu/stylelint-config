@@ -9,38 +9,41 @@ Shareable [Stylelint] config with great defaults. It supports CSS/PostCSS syntax
 
 ## Table of contents
 
-- [Stylelint config](#stylelint-config)
-  - [Table of contents](#table-of-contents)
+- [Stylelint Config](#stylelint-config)
   - [Install](#install)
   - [Usage](#usage)
-    - [With CSS or PostCSS](#with-css-or-postcss)
-    - [With SCSS](#with-scss)
-    - [With CSS in JS](#with-css-in-js)
-  - [Stylelint CLI](#styelint-cli)
+  - [Stylelint CLI](#stylelint-cli)
   - [Extends the config](#extends-the-config)
   - [Thanks](#thanks)
   - [License](#license)
 
 ## Install
 
-Based on the CSS environment you decide to support, read the instructions below and save the devDependencies needed to your **package.json**:
+Based on the CSS environment you decide to support, save the `devDependencies` you need to your package.json:
 
-```bash
-#--- CSS and PostCSS support ---#
-$ npm i -D stylelint @giotramu/stylelint-config
+#### CSS or PostCSS support
 
-#--- If you use SASS/SCSS ---#
-$ npm i -D stylelint stylelint-scss @giotramu/stylelint-config
+```sh
+npm install stylelint @giotramu/stylelint-config --save-dev
+```
 
-#--- Or if you adopt a CSS in JS library ---#
-$ npm i -D stylelint stylelint-processor-styled-components @giotramu/stylelint-config
+#### SASS or SCSS support
+
+```sh
+npm install stylelint stylelint-scss @giotramu/stylelint-config --save-dev
+```
+
+#### CSS in JS support
+
+```sh
+npm install stylelint stylelint-processor-styled-components @giotramu/stylelint-config --save-dev
 ```
 
 ## Usage
 
 Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you decide to support.
 
-### With CSS or PostCSS
+#### Lint CSS or PostCSS
 
 ```js
 module.exports = {
@@ -48,7 +51,7 @@ module.exports = {
 };
 ```
 
-### With SASS or SCSS
+#### Lint SASS or SCSS
 
 ```js
 module.exports = {
@@ -56,7 +59,7 @@ module.exports = {
 };
 ```
 
-### With CSS in JS library
+#### Lint CSS in JS
 
 ```js
 module.exports = {
@@ -66,15 +69,13 @@ module.exports = {
 
 ## Stylelint CLI
 
-Use the stylelint CLI for linting the supported files. Drop this line into your `package.json`:
+Use the stylelint CLI for linting the supported files. Drop this line into your `package.json` and customize it as your needs:
 
 ```json
 {
-  //...
   "scripts": {
     "lint:css": "stylelint ./styles/*.{js,ts,css,scss}"
   }
-  //...
 }
 ```
 
