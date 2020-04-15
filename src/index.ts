@@ -1,7 +1,7 @@
 export = {
   defaultSeverity: 'warning',
 
-  extends: ['./commons/rules.js', './commons/props-order.js'],
+  extends: ['./common/rules.js', './common/props-order.js'],
 
   plugins: ['stylelint-declaration-block-no-ignored-properties'],
 
