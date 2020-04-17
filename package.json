@@ -34,7 +34,7 @@
     "pretest": "npm run build",
     "test": "run-p test:**",
     "prebuild": "rimraf ./dist",
-    "build": "tsc --declaration"
+    "build": "tsc"
   },
   "peerDependencies": {
     "stylelint": "^13.2.1",
