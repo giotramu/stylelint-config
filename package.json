@@ -26,15 +26,15 @@
     "*.d.ts"
   ],
   "scripts": {
-    "clean": "rimraf ./index.js ./hybrid.js ./scss.js ./common/*.js *.d.ts",
     "check:src": "tsc --noEmit",
-    "lint:src": "eslint . --ext .ts,.js",
-    "lint": "npm run check:src & npm run lint:src",
+    "lint:src": "eslint . --ext .js,.ts",
+    "lint": "npm run lint:src",
     "test:css": "stylelint ./test/*.css --config ./test/_config.css.js",
     "test:scss": "stylelint ./test/*.scss --config ./test/_config.scss.js",
     "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
     "pretest": "npm run build",
     "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
+    "clean": "rimraf ./index.js ./hybrid.js ./scss.js ./common/*.js *.d.ts",
     "prebuild": "npm run clean",
     "build": "tsc"
   },
