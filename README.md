@@ -1,6 +1,6 @@
 # Stylelint Config
 
-Shareable [Stylelint][stylelint-url] config with great defaults. It supports CSS/PostCSS syntax, [SCSS language][sass-doc-url] and some CSS in JS solutions, like [Styled Components][styled-components-url], [Emotion.js][emotion-url] or [Linaria][linaria-url].
+Shareable [Stylelint][stylelint-url] config with great defaults. It supports CSS/PostCSS syntax, [SASS language][sass-doc-url] and some CSS in JS solutions, like [Styled Components][styled-components-url], [Emotion.js][emotion-url] or [Linaria][linaria-url].
 
 [![NPM][npm-img]][npm-url]
 [![Build Status][ci-img]][ci-url]
@@ -13,63 +13,51 @@ Shareable [Stylelint][stylelint-url] config with great defaults. It supports CSS
   - [Install](#install)
   - [Usage](#usage)
   - [Stylelint CLI](#stylelint-cli)
-  - [Extends the config](#extends-the-config)
+  - [Extend the config](#extend-the-config)
   - [Thanks](#thanks)
   - [License](#license)
 
 ## Install
 
+> Tested on Node.js >= 10.x and LTS.
+
 Based on the CSS environment you decide to support, save the `devDependencies` you need to your package.json:
 
-#### CSS or PostCSS support
-
 ```sh
+# for CSS or PostCSS support
 npm install stylelint @giotramu/stylelint-config --save-dev
-```
 
-#### SASS or SCSS support
-
-```sh
+# for SASS or SCSS support
 npm install stylelint stylelint-scss @giotramu/stylelint-config --save-dev
-```
 
-#### CSS in JS support
-
-```sh
+# for CSS in JS support
 npm install stylelint stylelint-processor-styled-components @giotramu/stylelint-config --save-dev
 ```
 
 ## Usage
 
-Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you decide to support.
-
-#### Lint CSS or PostCSS
+Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you want to support.
 
 ```js
+// lint CSS or PostSCSS
 module.exports = {
   extends: '@giotramu/stylelint-config'
 };
-```
 
-#### Lint SASS or SCSS
-
-```js
+// lint SASS or SCSS
 module.exports = {
-  extends: '@giotramu/stylelint-config/dist/scss'
+  extends: '@giotramu/stylelint-config/scss'
 };
-```
 
-#### Lint CSS in JS
-
-```js
+// lint CSS in JS
 module.exports = {
-  extends: '@giotramu/stylelint-config/dist/hybrid'
+  extends: '@giotramu/stylelint-config/hybrid'
 };
 ```
 
 ## Stylelint CLI
 
-Use the stylelint CLI for linting the supported files. Drop this line into your `package.json` and customize it as your needs:
+Use Stylelint CLI to check the supported files. Drop this line into your `package.json` and customize it as your needs:
 
 ```json
 {
@@ -79,9 +67,9 @@ Use the stylelint CLI for linting the supported files. Drop this line into your 
 }
 ```
 
-## Extends the config
+## Extend the config
 
-You can extends the configuration or overrides some rules. More details about the loading mechanism of the configuration are available on the [stylelint documentation][stylelint-doc-url].
+You can extend the configuration or overrides some rules. More details about the loading mechanism of the configuration are available on [the Stylelint documentation][stylelint-doc-url].
 
 ```js
 module.exports = {

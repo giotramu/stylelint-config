@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../dist/scss']
+  extends: ['../scss']
 };

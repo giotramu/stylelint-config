@@ -36,7 +36,12 @@ export = {
     'scss/dollar-variable-colon-space-before': 'never',
     'scss/dollar-variable-no-missing-interpolation': true,
     'scss/dollar-variable-pattern': lowerCase,
-    'scss/no-duplicate-dollar-variables': true,
+    'scss/no-duplicate-dollar-variables': [
+      true,
+      {
+        ignoreInside: ['at-rule', 'nested-at-rule']
+      }
+    ],
 
     // --- scss operators
     'scss/operator-no-unspaced': true,

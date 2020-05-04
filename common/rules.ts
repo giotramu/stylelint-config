@@ -29,7 +29,7 @@ export = {
     'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
     'comment-word-blacklist': [
-      [/^TODO:/, /^FIXME:/, 'fuck', 'shit', 'damn', 'twerk', 'egg yolk'],
+      ['fuck', 'shit', 'damn', 'twerk', 'egg yolk'],
       {
         severity: 'warning'
       }
@@ -48,7 +48,7 @@ export = {
         /thin/,
         /medium/,
         /thick/,
-        '0' // prefer `none`
+        'none' // prefer `0`
       ],
       '/^transition/': [/all/]
     },
@@ -57,7 +57,7 @@ export = {
     'font-family-name-quotes': 'always-where-recommended',
     'font-family-no-duplicate-names': true,
     'font-family-no-missing-generic-family-keyword': null,
-    'font-weight-notation': 'named-where-possible',
+    'font-weight-notation': 'numeric',
 
     // --- function
     'function-calc-no-invalid': true,
@@ -108,11 +108,18 @@ export = {
         ignoreProperties: [
           'app-region', // for Electron
           'appearance',
-          'mask'
+          'mask',
+          'tab-size',
+          'text-size-adjust'
         ]
       }
     ],
-    'property-no-unknown': true,
+    'property-no-unknown': [
+      true,
+      {
+        checkPrefixed: true
+      }
+    ],
     'shorthand-property-no-redundant-values': true,
 
     // --- selector
