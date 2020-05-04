@@ -34,7 +34,7 @@ jobs:
         env:
           CI: true
 
-      - name: 'Build the artifact'
+      - name: 'Build the package'
         run: npm run build
         env:
           CI: true
