@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": false,
+    "baseUrl": ".",
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,8 +15,8 @@
     "sourceMap": false,
     "strict": true,
     "target": "es5",
-    "baseUrl": ".",
-    "outDir": "./dist"
+    "types": ["node"]
   },
-  "include": ["./src"]
+  "files": ["index.ts", "hybrid.ts", "scss.ts"],
+  "include": ["./common"]
 }

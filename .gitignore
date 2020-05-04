@@ -1,5 +1,9 @@
-coverage/
-dist/
+/index.d.ts
+/index.js
+/hybrid.d.ts
+/hybrid.js
+/scss.d.ts
+/scss.js
 
 .cache
 .DS_Store

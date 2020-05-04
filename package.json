@@ -1,7 +1,7 @@
 {
   "name": "@giotramu/stylelint-config",
   "version": "2.3.0",
-  "description": "Shareable stylelint config with great defaults.",
+  "description": "Shareable Stylelint config with great defaults. It supports PostCSS syntax, SASS language, and CSS in JS solutions.",
   "author": "giotramu <https://twitter.com/giotramu>",
   "homepage": "https://github.com/giotramu/stylelint-config#readme",
   "license": "MIT",
@@ -13,27 +13,29 @@
     "url": "https://github.com/giotramu/stylelint-config/issues"
   },
   "engines": {
-    "node": ">=10.18",
-    "npm": ">=6.13"
+    "node": ">=10.x",
+    "npm": ">=6.x"
   },
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": [
-    "dist/"
+    "*.js",
+    "*.d.ts"
   ],
   "scripts": {
+    "clean": "rimraf ./index.js ./hybrid.js ./scss.js ./common/*.js *.d.ts",
     "check:src": "tsc --noEmit",
     "lint:src": "eslint . --ext .ts,.js",
-    "lint": "npm run check:src && npm run lint:src",
+    "lint": "npm run check:src & npm run lint:src",
     "test:css": "stylelint ./test/*.css --config ./test/_config.css.js",
     "test:scss": "stylelint ./test/*.scss --config ./test/_config.scss.js",
     "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
     "pretest": "npm run build",
-    "test": "run-p test:**",
-    "prebuild": "rimraf ./dist",
+    "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
+    "prebuild": "npm run clean",
     "build": "tsc"
   },
   "peerDependencies": {
@@ -46,19 +48,18 @@
     "stylelint-order": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^13.9.8",
+    "@types/node": "^13.13.4",
     "@types/stylelint": "^9.10.1",
     "eslint": "^6.8.0",
     "eslint-config-contactlab": "^4.2.2",
-    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-prettier": "^6.11.0",
     "husky": "^4.2.3",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.2",
+    "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.2",
-    "stylelint": "^13.2.1",
+    "stylelint": "^13.3.3",
     "stylelint-processor-styled-components": "^1.10.0",
-    "stylelint-scss": "^3.16.0",
+    "stylelint-scss": "^3.17.1",
     "typescript": "^3.8.3"
   },
   "keywords": [

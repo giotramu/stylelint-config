@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../dist/hybrid']
+  extends: ['../hybrid']
 };
