@@ -1,9 +1,11 @@
-/index.d.ts
-/index.js
 /hybrid.d.ts
 /hybrid.js
+/index.d.ts
+/index.js
 /scss.d.ts
 /scss.js
+common/*.d.ts
+common/*.js
 
 .cache
 .DS_Store
