@@ -22,8 +22,14 @@
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
-    "common/*.{js,d.ts}",
-    "*.{js,d.ts}"
+    "common/*.d.ts",
+    "common/*.js",
+    "hybrid.d.ts",
+    "hybrid.js",
+    "index.d.ts",
+    "index.js",
+    "scss.d.ts",
+    "scss.js"
   ],
   "scripts": {
     "check:src": "tsc --noEmit",

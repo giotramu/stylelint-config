@@ -16,7 +16,7 @@
   "typescript.validate.enable": true,
   "typescript.reportStyleChecksAsWarnings": false,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "eslint.validate": ["typescript", "javascript"],
+  "eslint.validate": ["javascript", "typescript"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
