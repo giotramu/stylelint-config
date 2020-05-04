@@ -30,9 +30,7 @@ jobs:
         run: |
           npm run check:src --if-present
           npm run lint --if-present
-
-      - name: 'Run unit tests'
-        run: npm run test
+          npm run test
         env:
           CI: true
 
