@@ -48,7 +48,7 @@ export = {
         /thin/,
         /medium/,
         /thick/,
-        'none' // prefer `0`
+        '0' // prefer `none`
       ],
       '/^transition/': [/all/]
     },
@@ -57,7 +57,7 @@ export = {
     'font-family-name-quotes': 'always-where-recommended',
     'font-family-no-duplicate-names': true,
     'font-family-no-missing-generic-family-keyword': null,
-    'font-weight-notation': 'numeric',
+    'font-weight-notation': ['numeric', {ignore: ['relative']}],
 
     // --- function
     'function-calc-no-invalid': true,
