@@ -18,5 +18,5 @@
     "types": ["node"]
   },
   "files": ["index.ts", "hybrid.ts", "scss.ts"],
-  "include": ["./common"]
+  "include": ["common"]
 }
