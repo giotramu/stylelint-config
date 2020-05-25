@@ -19,7 +19,7 @@ Shareable [Stylelint][stylelint-url] config with great defaults. It supports CSS
 
 ## Install
 
-> Tested on Node.js >= 10.x and LTS.
+> Tested on Node.js >= 12.x.
 
 Based on the CSS environment you decide to support, save the `devDependencies` you need to your package.json:
 
