@@ -95,7 +95,7 @@ module.exports = {
   B A D G E S
 -->
 
-[ci-img]: https://github.com/giotramu/stylelint-config/workflows/test%20and%20build/badge.svg?branch=master
+[ci-img]: https://github.com/giotramu/stylelint-config/workflows/test%20+%20build/badge.svg?branch=master
 [deps-img]: https://badgen.net/david/dep/giotramu/stylelint-config
 [devdeps-img]: https://badgen.net/david/dev/giotramu/stylelint-config
 [npm-img]: https://badgen.net/npm/v/@giotramu/stylelint-config?label=npm%20package
