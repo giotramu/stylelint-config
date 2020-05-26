@@ -6,6 +6,7 @@
 /scss.js
 common/*.d.ts
 common/*.js
+typings/
 
 .cache
 .DS_Store

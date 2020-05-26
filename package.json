@@ -20,7 +20,7 @@
     "access": "public"
   },
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "typings/index.d.ts",
   "files": [
     "common/*.{js,d.ts}",
     "{hybrid,index,scss}.{js,d.ts}"
@@ -34,7 +34,7 @@
     "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
     "pretest": "npm run build",
     "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
-    "clean": "rimraf ./{hybrid,index,scss}.{js,d.ts} ./common/*.{js,d.ts}",
+    "clean": "rimraf ./{hybrid,index,scss}.js ./common/*.js ./typings",
     "prebuild": "npm run clean",
     "build": "tsc"
   },

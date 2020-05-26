@@ -38,18 +38,25 @@ npm install stylelint stylelint-processor-styled-components @giotramu/stylelint-
 
 Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you want to support.
 
+Lint CSS or PostSCSS:
+
 ```js
-// lint CSS or PostSCSS
 module.exports = {
   extends: '@giotramu/stylelint-config'
 };
+```
 
-// lint SASS or SCSS
+Lint SASS or SCSS:
+
+```js
 module.exports = {
   extends: '@giotramu/stylelint-config/scss'
 };
+```
 
-// lint CSS in JS
+Lint CSS in JS:
+
+```js
 module.exports = {
   extends: '@giotramu/stylelint-config/hybrid'
 };
