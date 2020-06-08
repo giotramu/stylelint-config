@@ -1,10 +1,6 @@
-/common/*.d.ts
 /common/*.js
-/hybrid.d.ts
 /hybrid.js
-/index.d.ts
 /index.js
-/scss.d.ts
 /scss.js
 /typings/
 
