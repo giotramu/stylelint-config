@@ -8,7 +8,6 @@
     "declaration": true,
     "declarationDir": "typings",
     "esModuleInterop": true,
-    "experimentalDecorators": false,
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext"],
     "module": "commonjs",
@@ -20,10 +19,10 @@
     "noUnusedParameters": true,
     "strict": true,
     "target": "es5",
-    "typeRoots": ["typings", "node_modules/@types"],
+    "typeRoots": ["./typings", "./node_modules/@types"],
     "types": ["node"]
   },
-  "files": ["index.ts", "hybrid.ts", "scss.ts"],
-  "include": ["common/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "files": ["./index.ts", "./hybrid.ts", "./scss.ts"],
+  "include": ["./common/**/*"],
+  "exclude": ["node_modules"]
 }
