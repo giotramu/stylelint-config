@@ -10,6 +10,7 @@ Shareable [Stylelint][stylelint-url] config with great defaults. It supports CSS
 ## Table of contents
 
 - [Stylelint Config](#stylelint-config)
+  - [Table of contents](#table-of-contents)
   - [Install](#install)
   - [Usage](#usage)
   - [Stylelint CLI](#stylelint-cli)
@@ -102,7 +103,7 @@ module.exports = {
   B A D G E S
 -->
 
-[ci-img]: https://github.com/giotramu/stylelint-config/workflows/test%20+%20build/badge.svg?branch=master
+[ci-img]: https://github.com/giotramu/stylelint-config/workflows/test%20+%20build/badge.svg?branch=stable
 [deps-img]: https://badgen.net/david/dep/giotramu/stylelint-config
 [devdeps-img]: https://badgen.net/david/dev/giotramu/stylelint-config
 [npm-img]: https://badgen.net/npm/v/@giotramu/stylelint-config?label=npm%20package
