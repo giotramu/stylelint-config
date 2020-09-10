@@ -1,16 +1,16 @@
 const propsOrder = [
   {
-    // --- must be first
+    // --- Must Be First
     properties: ['all']
   },
 
   {
-    // --- content
+    // --- Content
     properties: ['content', 'quotes']
   },
 
   {
-    // --- display and box model
+    // --- Display and Box Model
     properties: [
       'display',
       'box-sizing',
@@ -74,17 +74,17 @@ const propsOrder = [
   },
 
   {
-    // --- positioning
+    // --- Positioning
     properties: ['position', 'top', 'right', 'bottom', 'left', 'vertical-align']
   },
 
   {
-    // --- float
+    // --- Float
     properties: ['float', 'clear']
   },
 
   {
-    // --- grid
+    // --- Grid
     properties: [
       'grid',
       'grid-area',
@@ -108,7 +108,7 @@ const propsOrder = [
   },
 
   {
-    // --- columns
+    // --- Column
     properties: [
       'columns',
       'column-gap',
@@ -124,7 +124,7 @@ const propsOrder = [
   },
 
   {
-    // --- flexbox
+    // --- Flexbox
     properties: [
       'flex',
       'flex-basis',
@@ -137,22 +137,22 @@ const propsOrder = [
   },
 
   {
-    // --- align
+    // --- Align
     properties: ['align-content', 'align-items', 'align-self']
   },
 
   {
-    // --- justify
+    // --- Justify
     properties: ['justify-content', 'justify-items', 'justify-self']
   },
 
   {
-    // --- order
+    // --- Order
     properties: ['order']
   },
 
   {
-    // --- tables
+    // --- Table
     properties: [
       'table-layout',
       'border-collapse',
@@ -162,7 +162,7 @@ const propsOrder = [
   },
 
   {
-    // --- transform
+    // --- Transform
     properties: [
       'transform',
       'transform-origin',
@@ -176,12 +176,12 @@ const propsOrder = [
   },
 
   {
-    // --- visibility
+    // --- Visibility
     properties: ['visibility', 'opacity', 'z-index']
   },
 
   {
-    // --- appearance
+    // --- Appearance
     properties: [
       'color',
       'background',
@@ -204,7 +204,7 @@ const propsOrder = [
   },
 
   {
-    // --- lists
+    // --- List
     properties: [
       'list-style',
       'list-style-type',
@@ -215,7 +215,7 @@ const propsOrder = [
   },
 
   {
-    // --- font
+    // --- Font
     properties: [
       'font',
       'font-display',
@@ -241,7 +241,7 @@ const propsOrder = [
   },
 
   {
-    // --- text alignment and decoration
+    // --- Text Alignment and Decoration
     properties: [
       'direction',
       'tab-size',
@@ -268,7 +268,7 @@ const propsOrder = [
   },
 
   {
-    // --- text spacing
+    // --- Text Spacing
     properties: [
       'line-height',
       'word-spacing',
@@ -280,7 +280,7 @@ const propsOrder = [
   },
 
   {
-    // --- interactivity
+    // --- Animation and Interactivity
     properties: [
       'transition',
       'transition-property',
@@ -302,7 +302,7 @@ const propsOrder = [
   },
 
   {
-    // --- counters
+    // --- Counter
     properties: ['counter-reset', 'counter-increment']
   }
 ];
