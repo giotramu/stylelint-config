@@ -78,3 +78,16 @@ input[type='text'] {
 .todd-alquist {
   /* empty block */
 }
+
+.walter-white,
+.jesse-pinkman {
+  width: auto;
+}
+
+.walter-white {
+  height: 60%;
+}
+
+.jesse-pinkman {
+  height: 50%;
+}

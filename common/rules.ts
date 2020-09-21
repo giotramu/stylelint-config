@@ -75,7 +75,7 @@ export = {
     'no-duplicate-selectors': [
       true,
       {
-        disallowInList: true
+        disallowInList: false
       }
     ],
     'no-empty-source': true,
