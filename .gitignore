@@ -1,4 +1,4 @@
-/common/*.js
+/common/
 /hybrid.js
 /index.js
 /scss.js
