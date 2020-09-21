@@ -22,11 +22,12 @@
   "main": "index.js",
   "types": "typings/index.d.ts",
   "files": [
-    "common/*.{js,d.ts}",
-    "{hybrid,index,scss}.{js,d.ts}"
+    "{index,hybrid,scss}.js",
+    "common/",
+    "typings/"
   ],
   "scripts": {
-    "check:src": "tsc --noEmit",
+    "check": "tsc --noEmit",
     "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore",
     "lint": "npm run lint:src",
     "test:css": "stylelint ./test/*.css --config ./test/_config.css.js",
@@ -34,9 +35,8 @@
     "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
     "pretest": "npm run build",
     "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
-    "clean": "rimraf ./{hybrid,index,scss}.js ./common/*.js ./typings",
-    "prebuild": "npm run clean",
-    "build": "tsc"
+    "clean": "rimraf ./{index,hybrid,scss}.js ./common ./typings",
+    "build": "npm run clean && tsc"
   },
   "peerDependencies": {
     "stylelint": "^13.7.1",
