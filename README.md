@@ -25,14 +25,14 @@ Shareable [Stylelint][stylelint-url] config with great defaults. It supports CSS
 Based on the CSS environment you decide to support, save the `devDependencies` you need to your package.json:
 
 ```sh
-# for CSS or PostCSS support
-npm install stylelint @giotramu/stylelint-config --save-dev
+# Support CSS or PostCSS
+npm install --save-dev stylelint @giotramu/stylelint-config
 
-# for SASS or SCSS support
-npm install stylelint stylelint-scss @giotramu/stylelint-config --save-dev
+# Support SASS or SCSS
+npm install --save-dev stylelint stylelint-scss @giotramu/stylelint-config
 
-# for CSS in JS support
-npm install stylelint stylelint-processor-styled-components @giotramu/stylelint-config --save-dev
+# Support CSS in JS
+npm install --save-dev stylelint stylelint-processor-styled-components @giotramu/stylelint-config
 ```
 
 ## Usage
