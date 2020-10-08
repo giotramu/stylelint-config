@@ -44,12 +44,7 @@ export = {
     'declaration-empty-line-before': 'never',
     'declaration-no-important': true,
     'declaration-property-value-disallowed-list': {
-      '/^border(?!-(width|spacing))/': [
-        /thin/,
-        /medium/,
-        /thick/,
-        '0' // Prefer `none`
-      ],
+      '/^border(?!-(width|spacing))/': [/thin/, /medium/, /thick/],
       '/^transition/': [/all/]
     },
 
@@ -70,7 +65,7 @@ export = {
 
     // --- General
     'block-opening-brace-space-before': 'always',
-    'no-descending-specificity': null, // Disabled because of https://github.com/stylelint/stylelint/issues/3196
+    'no-descending-specificity': null,
     'no-duplicate-at-import-rules': true,
     'no-duplicate-selectors': [
       true,
@@ -112,7 +107,7 @@ export = {
       true,
       {
         ignoreProperties: [
-          'app-region', // For Electron
+          'app-region', // Electron
           'appearance',
           'mask',
           'tab-size',
