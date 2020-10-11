@@ -37,7 +37,7 @@ npm install --save-dev stylelint stylelint-processor-styled-components @giotramu
 
 ## Usage
 
-Create a `.stylelintrc.js` or `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you want to support.
+Create a `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you want to support.
 
 Lint CSS or PostSCSS:
 
