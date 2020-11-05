@@ -13,7 +13,7 @@
     "url": "https://github.com/giotramu/stylelint-config/issues"
   },
   "engines": {
-    "node": ">=12.x",
+    "node": ">=14.x",
     "npm": ">=6.x"
   },
   "publishConfig": {
@@ -28,7 +28,7 @@
   ],
   "scripts": {
     "check": "tsc --noEmit",
-    "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "lint:src": "eslint . --ext .js,.ts",
     "lint": "npm run lint:src",
     "test:css": "stylelint ./test/*.css --config ./test/_config.css.js",
     "test:scss": "stylelint ./test/*.scss --config ./test/_config.scss.js",
@@ -48,19 +48,19 @@
     "stylelint-order": "^4.1.0"
   },
   "devDependencies": {
-    "@types/node": "^14.11.8",
+    "@types/node": "^14.14.6",
     "@types/stylelint": "^9.10.1",
-    "eslint": "^7.11.0",
+    "eslint": "^7.12.1",
     "eslint-config-contactlab": "^5.0.0",
-    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-prettier": "^6.15.0",
     "husky": "^4.3.0",
     "prettier": "^2.1.2",
-    "pretty-quick": "^3.0.2",
+    "pretty-quick": "^3.1.0",
     "rimraf": "^3.0.2",
     "stylelint": "^13.7.2",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-scss": "^3.18.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.5"
   },
   "keywords": [
     "check",

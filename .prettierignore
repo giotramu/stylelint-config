@@ -1,13 +1,7 @@
+.cache
 /common/
 /hybrid.js
 /index.js
 /scss.js
 /typings/
-
-.cache
-.env*
-.DS_Store
-*lock
-*log
 node_modules
-Thumbs.db
