@@ -1,11 +1,9 @@
 # Stylelint Config
 
-Shareable [Stylelint][stylelint-url] config with great defaults. It supports CSS/PostCSS syntax, [SASS language][sass-doc-url] and some CSS in JS solutions, like [Styled Components][styled-components-url], [Emotion.js][emotion-url] or [Linaria][linaria-url].
+Strict and modular [Stylelint][stylelint-url] config with supports for CSS or PostCSS syntax, SASS language, and CSS in JS solutions, like [Styled Components][styled-components-url], [Emotion.js][emotion-url] or [Linaria][linaria-url]. It works great in conjunction with Prettier.
 
 [![NPM][npm-img]][npm-url]
 [![Build Status][ci-img]][ci-url]
-[![Dependencies][deps-img]][deps-url]
-[![Dev Dependencies][devdeps-img]][devdeps-url]
 
 ## Table of contents
 
@@ -103,10 +101,8 @@ module.exports = {
   B A D G E S
 -->
 
-[ci-img]: https://github.com/giotramu/stylelint-config/workflows/test%20+%20build/badge.svg?branch=stable
-[deps-img]: https://badgen.net/david/dep/giotramu/stylelint-config
-[devdeps-img]: https://badgen.net/david/dev/giotramu/stylelint-config
-[npm-img]: https://badgen.net/npm/v/@giotramu/stylelint-config?label=npm%20package
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/stylelint-config/test%20+%20build?style=flat&colorA=0c57fb&colorB=0c57fb
+[npm-img]: https://img.shields.io/npm/v/@giotramu/stylelint-config?style=flat&colorA=0c57fb&colorB=0c57fb
 
 <!---
   L I N K S
@@ -118,7 +114,6 @@ module.exports = {
 [emotion-url]: https://github.com/emotion-js/emotion
 [linaria-url]: https://github.com/callstack/linaria
 [npm-url]: https://www.npmjs.com/package/@giotramu/stylelint-config
-[sass-doc-url]: https://sass-lang.com
 [styled-components-url]: https://github.com/styled-components/styled-components
 [stylelint-declaration-block-no-ignored-properties-url]: https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties
 [stylelint-doc-url]: https://stylelint.io/user-guide/configuration/#extends
