@@ -2,6 +2,22 @@
 
 All notable changes to the project will be documented in this file.
 
+## 5.1.1 (2020-11-22)
+
+### Added
+
+- Distribute the `CHANGELOG.md` (this file) with NPM and GitHub packages
+
+### Changed
+
+- Update dependencies
+
+### Fixed
+
+--
+
+---
+
 ## 5.1.0 (2020-10-08)
 
 ### Added
