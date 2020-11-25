@@ -2,6 +2,22 @@
 
 All notable changes to the project will be documented in this file.
 
+## 5.1.3 (2020-11-25)
+
+### Added
+
+--
+
+### Changed
+
+- Compile the TypeScript code to support the ECMAScript 2015 syntax. Support for Node version 12.x is guaranteed
+
+### Fixed
+
+--
+
+---
+
 ## 5.1.2 (2020-11-24)
 
 ### Added
