@@ -5,10 +5,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 [![NPM][npm-img]][npm-url]
 [![Build Status][ci-img]][ci-url]
 
-## Table of contents
-
 - [Stylelint Config](#stylelint-config)
-  - [Table of contents](#table-of-contents)
   - [Install](#install)
   - [Usage](#usage)
   - [Stylelint CLI](#stylelint-cli)
@@ -101,8 +98,8 @@ module.exports = {
   B A D G E S
 -->
 
-[ci-img]: https://img.shields.io/github/workflow/status/giotramu/stylelint-config/test%20+%20build?style=flat-square&colorA=0c57fb&colorB=0c57fb
-[npm-img]: https://img.shields.io/npm/v/@giotramu/stylelint-config?style=flat-square&colorA=0c57fb&colorB=0c57fb
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/stylelint-config/test%20+%20build?style=flat-square&colorA=202d3a&colorB=0c57fb
+[npm-img]: https://img.shields.io/npm/v/@giotramu/stylelint-config?style=flat-square&colorA=202d3a&colorB=0c57fb
 
 <!---
   L I N K S
