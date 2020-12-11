@@ -6,83 +6,162 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 [![Build Status][ci-img]][ci-url]
 
 - [Stylelint Config](#stylelint-config)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Stylelint CLI](#stylelint-cli)
+  - [Configs](#configs)
   - [Extend the config](#extend-the-config)
+  - [Integrating Stylelint with IDEs/editors](#integrating-stylelint-with-ideseditors)
   - [Thanks](#thanks)
   - [License](#license)
 
-## Install
+## Configs
 
-> Tested on Node.js >= 14.x.
+> **Note:** Base config does not include any formatting rules. It is strongly recommended to use Prettier config for this purposes.
 
-Based on the CSS environment you decide to support, save the `devDependencies` you need to your package.json:
+<!-- CSS/PostCSS Syntax -->
+<details>
+<summary><b>Support CSS/PostCSS syntax</b></summary>
 
-```sh
-# Support CSS or PostCSS
-npm install --save-dev stylelint @giotramu/stylelint-config
+1. Install config:
 
-# Support SASS or SCSS
-npm install --save-dev stylelint stylelint-scss @giotramu/stylelint-config
+   ```sh
+   npm i -D stylelint @giotramu/stylelint-config
+   ```
 
-# Support CSS in JS
-npm install --save-dev stylelint stylelint-processor-styled-components @giotramu/stylelint-config
-```
+2. Create a `.stylelintrc.json` file in the root of your project, and extend from it:
 
-## Usage
+   ```diff
+   {
+     "extends": [
+   +   "@giotramu/stylelint-config"
+     ]
+   }
+   ```
 
-Create a `stylelint.config.js` file in the project root and grab the right configuration based on the CSS environment you want to support.
+3. Use Stylelint CLI to check the supported files. Drop this line into your `package.json`:
 
-Lint CSS or PostSCSS:
+   ```diff
+   {
+     "scripts": [
+   +   "lint:css": "stylelint ./styles/*.{css,pcss}"
+     ]
+   }
+   ```
 
-```js
-module.exports = {
-  extends: '@giotramu/stylelint-config'
-};
-```
+4. Lint your code:
 
-Lint SASS or SCSS:
+   ```sh
+   npm run lint:css
+   ```
 
-```js
-module.exports = {
-  extends: '@giotramu/stylelint-config/scss'
-};
-```
+   </details>
 
-Lint CSS in JS:
+<!-- SASS/SCSS Syntax -->
+<details>
+<summary><b>Support SASS/SCSS syntax</b></summary>
 
-```js
-module.exports = {
-  extends: '@giotramu/stylelint-config/hybrid'
-};
-```
+1. Install config:
 
-## Stylelint CLI
+   ```sh
+   npm i -D stylelint stylelint-scss @giotramu/stylelint-config
+   ```
 
-Use Stylelint CLI to check the supported files. Drop this line into your `package.json` and customize it as your needs:
+2. Create a `.stylelintrc.json` file in the root of your project, and extend from it:
 
-```json
-{
-  "scripts": {
-    "lint:css": "stylelint ./styles/*.{js,ts,css,scss}"
-  }
-}
-```
+   ```diff
+   {
+     "extends": [
+       "@giotramu/stylelint-config",
+   +   "@giotramu/stylelint-config/scss"
+     ]
+   }
+   ```
+
+3. Use Stylelint CLI to check the supported files. Drop this line into your `package.json`:
+
+   ```diff
+   {
+     "scripts": [
+   +   "lint:css": "stylelint ./styles/*.{sass,scss}"
+     ]
+   }
+   ```
+
+4. Lint your code:
+
+   ```sh
+   npm run lint:css
+   ```
+
+   </details>
+
+<!-- CSS in JS Syntax -->
+<details>
+<summary><b>Support CSS in JS syntax</b></summary>
+
+1. Install config:
+
+   ```sh
+   npm i -D stylelint stylelint-scss @giotramu/stylelint-config
+   ```
+
+2. Create a `.stylelintrc.json` file in the root of your project, and extend from it:
+
+   ```diff
+   {
+     "extends": [
+       "@giotramu/stylelint-config",
+   +   "@giotramu/stylelint-config/hybrid"
+     ]
+   }
+   ```
+
+3. Use Stylelint CLI to check the supported files. Drop this line into your `package.json`:
+
+   ```diff
+   {
+     "scripts": [
+   +   "lint:css": "stylelint ./styles/*.{js,ts}"
+     ]
+   }
+   ```
+
+4. Lint your code:
+
+   ```sh
+   npm run lint:css
+   ```
+
+   </details>
 
 ## Extend the config
 
 You can extend the configuration or overrides some rules. More details about the loading mechanism of the configuration are available on [the Stylelint documentation][stylelint-doc-url].
 
-```js
-module.exports = {
-  extends: '@giotramu/stylelint-config',
-  rules: {
-    'selector-class-pattern': null,
-    'selector-id-pattern': null
-  }
-};
+```diff
+{
+ "extends": "@giotramu/stylelint-config",
+ "rules": [
++   "selector-id-pattern": null
++   "selector-class-pattern": null
+ ]
+}
 ```
+
+## Integrating Stylelint with IDEs/editors
+
+<details>
+<summary><b>Visual Studio Code</b></summary>
+
+1. Install [Stylelint plugin][stylelint-vscode-url]
+
+2. Add the following to your `.vscode/settings.json`:
+   ```json
+   "css.validate": false,
+   "scss.validate": false,
+   "editor.codeActionsOnSave": {
+     "source.fixAll.stylelint": true
+   }
+   ```
+   </details>
 
 ## Thanks
 
@@ -117,3 +196,4 @@ module.exports = {
 [stylelint-order-url]: https://github.com/hudochenkov/stylelint-order
 [stylelint-scss-url]: https://github.com/kristerkari/stylelint-scss
 [stylelint-url]: https://stylelint.io
+[stylelint-vscode-url]: https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
