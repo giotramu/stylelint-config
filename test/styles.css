@@ -11,83 +11,85 @@
 }
 
 custom-element {
-  margin-top: 2rem;
-  border-color: $border-color;
+  margin-bottom: 2.4rem;
 }
 
 input[type='text'] {
-  --cp: #fff;
-  $var: #fff;
+  --custom-property: #fff;
   display: block;
-  color: #333;
-  background-color: linear-gradient(var(--cp, #f8f8f8), rgba(0, 0, 0, 0.8));
+  color: #444;
+  background-color: linear-gradient(
+    var(--custom-property, #eee),
+    rgb(0 0 0 / 80%)
+  );
 
   @media (--from-medium) {
-    border-color: $var;
-    background-color: $var;
+    border-color: transparent;
+    background-color: transparent;
   }
 }
 
-.hank-schrader,
-.marie-schrader:not(:first-child) {
-  padding: 10px;
+.foo,
+.bar:not(:first-child) {
+  padding: 1em;
   top: calc(calc(1em * 2) / 3);
 }
 
-.gustavo-fring {
+.baz {
   font-family: Inconsolata, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
     monospace;
 }
 
-.mike-ehrmantraut {
-  font-family: giotramu-serif, Didot, 'Bodoni MT', Georgia, serif;
+.buz {
+  font-family: custom-font-serif, Didot, 'Bodoni MT', Georgia, serif;
 }
 
-/* single-line comment */
+/* Single-line comment */
 @media (orientation: portrait), projection and (color) {
-  .gustavo-fring + .mike-ehrmantraut {
-    background: color(rgb(0, 0, 0) lightness(50%));
-    font-family: giotramu-sans-serif, 'Lucida Grande', 'Segoe UI', Arial,
+  .foo + .bar {
+    background: color(rgb(0 0 0) lightness(50%));
+    font-family: custom-font-sans-serif, 'Lucida Grande', 'Segoe UI', Arial,
       sans-serif;
   }
 }
 
-/**
-	* multi-line comment
-	*/
+/*
+ * Multi-line comment
+ */
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .saul-goodman {
-    height: 10rem;
-    margin: 10px;
-    margin-bottom: 15px;
+  .fav {
+    height: 8rem;
+    margin: 8rem;
+    margin-bottom: 16rem;
     background-image: repeating-linear-gradient(
       to bottom,
       transparent,
-      #fff 25px,
-      rgba(255, 255, 255, 1) 50px
+      #fff 24px,
+      rgb(255 255 255 / 90%) 48px
     );
-    box-shadow: 0 1px 1px #000, 0 1px 0 #fff, 2px 2px 1px 1px #ccc inset;
-
-    /* flush nested single line comment */
-    &::after {
-      content: '→';
-    }
+    box-shadow: 0 1px 1px #444, 0 1px 0 #fff, 2px 2px 1px 1px #eee inset;
   }
 }
 
-.todd-alquist {
-  /* empty block */
+.biz {
+  /* The empty block is not allowed. Put a comment instead  */
 }
 
-.walter-white,
-.jesse-pinkman {
-  width: auto;
+/* Use the modern notation for applicable color-functions */
+a.foo {
+  color: rgb(0 0 0);
+}
+a.bar {
+  color: rgb(12 122 231 / 20%);
+}
+a.baz {
+  color: hsl(270 60% 50% / 15%);
+}
+a.biz {
+  color: hsl(0.75turn 60% 70%);
 }
 
-.walter-white {
-  height: 60%;
-}
-
-.jesse-pinkman {
-  height: 50%;
+/* The BEM pattern is valid (https://github.com/getbem) */
+.block__element--modifier {
+  content: '';
 }

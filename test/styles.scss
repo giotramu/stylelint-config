@@ -20,12 +20,12 @@ $lg: 1440px;
 
 header {
   height: 200px;
-  background-color: #fff;
+  background-color: #eee;
   text-align: center;
   line-height: 200px;
 
   h1 {
-    color: #000;
+    color: #444;
     font-size: 18px;
   }
 
@@ -35,6 +35,15 @@ header {
 
     h1 {
       font-size: 24px;
+    }
+  }
+}
+
+// The BEM pattern is valid (https://github.com/getbem)
+.block__element--modifier {
+  &__element {
+    &--modifier {
+      content: '';
     }
   }
 }

@@ -21,6 +21,8 @@ export = {
     'block-no-empty': true,
 
     // --- Color
+    'alpha-value-notation': 'percentage',
+    'color-function-notation': 'modern',
     'color-hex-length': 'short',
     'color-named': 'never',
     'color-no-invalid-hex': true,
@@ -29,10 +31,7 @@ export = {
     'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
     'comment-word-disallowed-list': [
-      ['fuck', 'shit', 'damn', 'twerk', 'egg yolk'],
-      {
-        severity: 'warning'
-      }
+      ['fuck', 'shit', 'damn', 'twerk', 'egg yolk']
     ],
 
     // --- Custom Property
@@ -107,11 +106,10 @@ export = {
       true,
       {
         ignoreProperties: [
-          'app-region', // Electron
+          'app-region', // For Electron
           'appearance',
           'mask',
-          'tab-size',
-          'text-size-adjust'
+          'tab-size' // It's still only prefixed in Firefox
         ]
       }
     ],
@@ -165,11 +163,7 @@ export = {
     'value-no-vendor-prefix': [
       true,
       {
-        ignoreValues: [
-          'grab',
-          'grabbing',
-          'tab-size' // It's still only prefixed in Firefox
-        ]
+        ignoreValues: ['grab', 'grabbing']
       }
     ]
   }
