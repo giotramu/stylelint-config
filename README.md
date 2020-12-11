@@ -18,7 +18,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 
 <!-- CSS/PostCSS Syntax -->
 <details>
-<summary><b>Support CSS/PostCSS syntax</b></summary>
+<summary><b>Support CSS\PostCSS syntax</b></summary>
 
 1. Install config:
 

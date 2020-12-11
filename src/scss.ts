@@ -1,11 +1,12 @@
 import {lowerCase} from './common/namespaces';
 
 export = {
-  extends: ['./index.js'],
-
   plugins: ['stylelint-scss'],
 
   rules: {
+    // --- General / Sheet
+    'no-invalid-double-slash-comments': null,
+
     // --- SCSS If-Else
     'scss/at-rule-no-unknown': true,
     'scss/at-else-if-parentheses-space-before': 'always',

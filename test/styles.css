@@ -22,8 +22,10 @@ input[type='text'] {
     var(--custom-property, #eee),
     rgb(0 0 0 / 80%)
   );
+}
 
-  @media (--from-medium) {
+@media (--from-medium) {
+  input[type='text'] {
     border-color: transparent;
     background-color: transparent;
   }
@@ -79,12 +81,15 @@ input[type='text'] {
 a.foo {
   color: rgb(0 0 0);
 }
+
 a.bar {
   color: rgb(12 122 231 / 20%);
 }
+
 a.baz {
-  color: hsl(270 60% 50% / 15%);
+  color: hsl(270deg 60% 50% / 15%);
 }
+
 a.biz {
   color: hsl(0.75turn 60% 70%);
 }

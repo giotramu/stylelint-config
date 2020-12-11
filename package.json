@@ -13,7 +13,7 @@
     "url": "https://github.com/giotramu/stylelint-config/issues"
   },
   "engines": {
-    "node": ">=14.x",
+    "node": ">=12.x",
     "npm": ">=6.x"
   },
   "publishConfig": {
@@ -22,7 +22,7 @@
   "main": "index.js",
   "types": "typings/index.d.ts",
   "files": [
-    "{index,hybrid,scss}.js",
+    "{index,prettier,hybrid,scss}.js",
     "common/",
     "typings/",
     "CHANGELOG.md"
@@ -36,7 +36,7 @@
     "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
     "pretest": "npm run build",
     "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
-    "clean": "rimraf ./{index,hybrid,scss}.js ./common ./typings",
+    "clean": "rimraf ./{index,prettier,hybrid,scss}.js ./common ./typings",
     "build": "npm run clean && tsc"
   },
   "prettier": "@giotramu/prettier-config",
