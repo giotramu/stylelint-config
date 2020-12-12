@@ -7,6 +7,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 
 - [Stylelint Config](#stylelint-config)
   - [Configs](#configs)
+  - [Prettier](#prettier)
   - [Extend the config](#extend-the-config)
   - [Integrating Stylelint with IDEs/editors](#integrating-stylelint-with-ideseditors)
   - [Thanks](#thanks)
@@ -14,11 +15,10 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 
 ## Configs
 
-> **Note:** Base config does not include any formatting rules. It is strongly recommended to use Prettier config for this purposes.
+> Note: Base config includes the style-related rules. It is strongly recommended to use Prettier for these purposes. Read [here](#prettier) for details.
 
-<!-- CSS/PostCSS Syntax -->
 <details>
-<summary><b>Support CSS\PostCSS syntax</b></summary>
+<summary><b>Base config (CSS and PostCSS)</b></summary>
 
 1. Install config:
 
@@ -54,9 +54,8 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 
    </details>
 
-<!-- SASS/SCSS Syntax -->
 <details>
-<summary><b>Support SASS/SCSS syntax</b></summary>
+<summary><b>SASS/SCSS Syntax</b></summary>
 
 1. Install config:
 
@@ -93,9 +92,8 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 
    </details>
 
-<!-- CSS in JS Syntax -->
 <details>
-<summary><b>Support CSS in JS syntax</b></summary>
+<summary><b>CSS in JS Syntax</b></summary>
 
 1. Install config:
 
@@ -131,6 +129,20 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
    ```
 
    </details>
+
+## Prettier
+
+This _optional_ config just disables the Stylelint code formatting rules and let [Prettier][prettier-url] to handle them.
+
+```diff
+{
+ "extends": [
+   "@giotramu/stylelint-config",
+   "@giotramu/stylelint-config/scss",
++   "@giotramu/stylelint-config/prettier"
+ ]
+}
+```
 
 ## Extend the config
 
@@ -177,8 +189,8 @@ You can extend the configuration or overrides some rules. More details about the
   B A D G E S
 -->
 
-[ci-img]: https://img.shields.io/github/workflow/status/giotramu/stylelint-config/test%20+%20build?style=flat-square&colorA=202d3a&colorB=0c57fb
-[npm-img]: https://img.shields.io/npm/v/@giotramu/stylelint-config?style=flat-square&colorA=202d3a&colorB=0c57fb
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/stylelint-config/test%20+%20build?style=flat&colorA=202d3a&colorB=0c57fb
+[npm-img]: https://img.shields.io/npm/v/@giotramu/stylelint-config?style=flat&colorA=202d3a&colorB=0c57fb
 
 <!--
   L I N K S
@@ -190,6 +202,7 @@ You can extend the configuration or overrides some rules. More details about the
 [emotion-url]: https://github.com/emotion-js/emotion
 [linaria-url]: https://github.com/callstack/linaria
 [npm-url]: https://www.npmjs.com/package/@giotramu/stylelint-config
+[prettier-url]: https://prettier.io/
 [styled-components-url]: https://github.com/styled-components/styled-components
 [stylelint-declaration-block-no-ignored-properties-url]: https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties
 [stylelint-doc-url]: https://stylelint.io/user-guide/configuration/#extends
