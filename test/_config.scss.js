@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../index', '../scss']
+  extends: ['../index', '../scss', '../prettier']
 };

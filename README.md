@@ -139,7 +139,7 @@ This _optional_ config just disables the Stylelint code formatting rules and let
  "extends": [
    "@giotramu/stylelint-config",
    "@giotramu/stylelint-config/scss",
-+   "@giotramu/stylelint-config/prettier"
++   "@giotramu/stylelint-config/prettier" // ← Always on the bottom
  ]
 }
 ```
