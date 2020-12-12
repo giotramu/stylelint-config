@@ -115,4 +115,4 @@ All notable changes to the project will be documented in this file.
 - ![breaking] Set rule `selector-pseudo-class-no-unknown`
 - Update dependencies
 
-[breaking]: https://shields.io/badge/-breaking-202d3a?style=flat
+[breaking]: https://shields.io/badge/-breaking-202d3a?style=flat-square
