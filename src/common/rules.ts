@@ -37,8 +37,8 @@ export = {
     'declaration-block-no-shorthand-property-overrides': true,
 
     // --- Color
-    'alpha-value-notation': 'percentage',
-    'color-function-notation': 'modern',
+    'alpha-value-notation': 'number',
+    'color-function-notation': 'legacy',
     'color-hex-length': 'short',
     'color-named': 'never',
     'color-no-hex': null,
@@ -91,7 +91,8 @@ export = {
           'app-region', // For Electron
           'appearance',
           'mask',
-          'tab-size' // It's still only prefixed in Firefox
+          'tab-size', // It's still only prefixed in Firefox
+          'text-size-adjust'
         ]
       }
     ],
