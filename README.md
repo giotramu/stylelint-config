@@ -15,7 +15,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 
 ## Configs
 
-> Note: Base config includes the style-related rules. It is strongly recommended to use Prettier for these purposes. Read [here](#prettier) for details.
+> Note: Base config includes the style-related rules. It is strongly recommended to use Prettier for these purposes. More details are available [here](#prettier).
 
 <details>
 <summary><b>Base config (CSS and PostCSS)</b></summary>
@@ -134,19 +134,21 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 
 This _optional_ config just disables the Stylelint code formatting rules and let [Prettier][prettier-url] to handle them.
 
+Here is the example for a SASS + Prettier project:
+
 ```diff
 {
  "extends": [
    "@giotramu/stylelint-config",
    "@giotramu/stylelint-config/scss",
-+   "@giotramu/stylelint-config/prettier" // ← Always on the bottom
++   "@giotramu/stylelint-config/prettier" // ← Put on the bottom
  ]
 }
 ```
 
 ## Extend the config
 
-You can extend the configuration or overrides some rules. More details about the loading mechanism of the configuration are available on [the Stylelint documentation][stylelint-doc-url].
+You can extend the configuration or overrides some rules. More details about the loading mechanism are available in [the Stylelint documentation][stylelint-doc-url].
 
 ```diff
 {

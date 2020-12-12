@@ -2,6 +2,16 @@
 
 All notable changes to the project will be documented in this file.
 
+## 6.0.0 (2020-12-12)
+
+- Setup new rules, like `alpha-value-notation`, `color-function-notation`
+- ![breaking] Split the Stylelint rules into three different files: `index` (the base config), `scss`, `hybrid`. Details on the new configuration setup are available in the [README](https://github.com/giotramu/stylelint-config#configs)
+- ![breaking] Add style-related rules in the base config. If you use **Prettier**, follow the [instructions](https://github.com/giotramu/stylelint-config#prettier)
+- Update the `README.md` content
+- Update dependencies
+
+---
+
 ## 5.1.3 (2020-11-25)
 
 - Compile the TypeScript code to support the ECMAScript 2015 syntax. Support for Node version 12.x is guaranteed

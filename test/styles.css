@@ -20,7 +20,7 @@ input[type='text'] {
   color: #444;
   background-color: linear-gradient(
     var(--custom-property, #eee),
-    rgb(0 0 0 / 80%)
+    rgba(0, 0, 0, 0.8)
   );
 }
 
@@ -49,7 +49,7 @@ input[type='text'] {
 /* Single-line comment */
 @media (orientation: portrait), projection and (color) {
   .foo + .bar {
-    background: color(rgb(0 0 0) lightness(50%));
+    background: color(rgb(0, 0, 0) lightness(50%));
     font-family: custom-font-sans-serif, 'Lucida Grande', 'Segoe UI', Arial,
       sans-serif;
   }
@@ -67,7 +67,7 @@ input[type='text'] {
       to bottom,
       transparent,
       #fff 24px,
-      rgb(255 255 255 / 90%) 48px
+      rgb(255, 255, 255, 0.8) 48px
     );
     box-shadow: 0 1px 1px #444, 0 1px 0 #fff, 2px 2px 1px 1px #eee inset;
   }
@@ -75,23 +75,6 @@ input[type='text'] {
 
 .biz {
   /* The empty block is not allowed. Put a comment instead  */
-}
-
-/* Use the modern notation for applicable color-functions */
-a.foo {
-  color: rgb(0 0 0);
-}
-
-a.bar {
-  color: rgb(12 122 231 / 20%);
-}
-
-a.baz {
-  color: hsl(270deg 60% 50% / 15%);
-}
-
-a.biz {
-  color: hsl(0.75turn 60% 70%);
 }
 
 /* The BEM pattern is valid (https://github.com/getbem) */
