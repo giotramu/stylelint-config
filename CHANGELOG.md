@@ -2,6 +2,16 @@
 
 All notable changes to the project will be documented in this file.
 
+## 7.0.0 (2021-03-25)
+
+- ![breaking] Rename the config `@giotramu/stylelint-config/hybrid` in `@giotramu/stylelint-config/styled`
+- Setup new rules in `@giotramu/stylelint-config/styled`:
+  - `property-no-unknown` rule to `ignoreProperties: ['styled-mixin0']`. [Linaria](https://github.com/callstack/linaria) library is now supported by default;
+  - `selector-class-pattern` rule to `null`;
+  - `value-keyword-case` rule to `null`;
+
+---
+
 ## 6.0.0 (2020-12-12)
 
 - Setup new rules, like `alpha-value-notation`, `color-function-notation`
