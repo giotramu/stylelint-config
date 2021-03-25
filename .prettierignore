@@ -1,7 +1,8 @@
 .cache
 /common/
-/hybrid.js
 /index.js
 /scss.js
+/styled.js
 /typings/
 node_modules
+/README.md

@@ -1,8 +1,8 @@
 /common/
-/hybrid.js
 /index.js
 /prettier.js
 /scss.js
+/styled.js
 /typings/
 
 .cache

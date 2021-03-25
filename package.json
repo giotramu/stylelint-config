@@ -22,7 +22,7 @@
   "main": "index.js",
   "types": "typings/index.d.ts",
   "files": [
-    "{index,prettier,hybrid,scss}.js",
+    "{index,prettier,scss,styled}.js",
     "common/",
     "typings/",
     "CHANGELOG.md"
@@ -33,10 +33,10 @@
     "lint": "npm run lint:src",
     "test:css": "stylelint ./test/*.css --config ./test/_config.css.js",
     "test:scss": "stylelint ./test/*.scss --config ./test/_config.scss.js",
-    "test:hybrid": "stylelint ./test/*.{ts,js} --config ./test/_config.hybrid.js",
+    "test:styled": "stylelint ./test/*.{ts,js} --config ./test/_config.styled.js",
     "pretest": "npm run build",
-    "test": "npm run test:css && npm run test:scss && npm run test:hybrid",
-    "clean": "rimraf ./{index,prettier,hybrid,scss}.js ./common ./typings",
+    "test": "npm run test:css && npm run test:scss && npm run test:styled",
+    "clean": "rimraf ./{index,prettier,styled,scss}.js ./common ./typings",
     "build": "npm run clean && tsc"
   },
   "prettier": "@giotramu/prettier-config",
@@ -50,9 +50,9 @@
     "*.{ts,tsx}": "eslint --fix"
   },
   "peerDependencies": {
-    "stylelint": "^13.8.0",
+    "stylelint": "^13.12.0",
     "stylelint-processor-styled-components": "^1.10.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-scss": "^3.19.0"
   },
   "dependencies": {
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
@@ -60,12 +60,12 @@
   },
   "devDependencies": {
     "@giotramu/prettier-config": "^1.1.2",
-    "@types/node": "^14.14.33",
+    "@types/node": "^14.14.35",
     "@types/stylelint": "^9.10.1",
-    "eslint": "^7.21.0",
+    "eslint": "^7.22.0",
     "eslint-config-contactlab": "^6.1.0",
     "eslint-config-prettier": "^8.1.0",
-    "husky": "^5.1.3",
+    "husky": "^5.2.0",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",

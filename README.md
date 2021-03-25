@@ -51,8 +51,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
    ```sh
    npm run lint:css
    ```
-
-   </details>
+</details>
 
 <details>
 <summary><b>SASS/SCSS Syntax</b></summary>
@@ -89,8 +88,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
    ```sh
    npm run lint:css
    ```
-
-   </details>
+</details>
 
 <details>
 <summary><b>CSS in JS Syntax</b></summary>
@@ -98,7 +96,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
 1. Install config:
 
    ```sh
-   npm i -D stylelint stylelint-scss @giotramu/stylelint-config
+   npm i -D stylelint stylelint-processor-styled-components @giotramu/stylelint-config
    ```
 
 2. Create a `.stylelintrc.json` file in the root of your project, and extend from it:
@@ -107,7 +105,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
    {
      "extends": [
        "@giotramu/stylelint-config",
-   +   "@giotramu/stylelint-config/hybrid"
+   +   "@giotramu/stylelint-config/styled"
      ]
    }
    ```
@@ -127,8 +125,7 @@ Strict and modular [Stylelint][stylelint-url] config with supports for CSS or Po
    ```sh
    npm run lint:css
    ```
-
-   </details>
+</details>
 
 ## Prettier
 
@@ -175,7 +172,7 @@ You can extend the configuration or overrides some rules. More details about the
      "source.fixAll.stylelint": true
    }
    ```
-   </details>
+</details>
 
 ## Thanks
 
