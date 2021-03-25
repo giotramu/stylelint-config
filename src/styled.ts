@@ -8,7 +8,7 @@ export = {
       true,
       {
         checkPrefixed: false,
-        ignoreProperties: ['styled-mixin0']
+        ignoreProperties: [/^styled-mixin/]
       }
     ],
     'selector-class-pattern': null,

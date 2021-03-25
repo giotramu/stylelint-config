@@ -2,6 +2,9 @@
 
 All notable changes to the project will be documented in this file.
 
+## 7.0.1 (2021-03-25)
+- In `property-no-unknown` use regex instead of strings
+
 ## 7.0.0 (2021-03-25)
 
 - ![breaking] Rename the config `@giotramu/stylelint-config/hybrid` in `@giotramu/stylelint-config/styled`
