@@ -3,6 +3,15 @@ export = {
 
   rules: {
     'no-empty-source': null,
-    'no-missing-end-of-source-newline': null
+    'no-missing-end-of-source-newline': null,
+    'property-no-unknown': [
+      true,
+      {
+        checkPrefixed: false,
+        ignoreProperties: ['styled-mixin0']
+      }
+    ],
+    'selector-class-pattern': null,
+    'value-keyword-case': null
   }
 };
