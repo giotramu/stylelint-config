@@ -3,7 +3,7 @@
 /prettier.js
 /scss.js
 /styled.js
-/typings/
+/types/
 
 .cache
 .env*

@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "alwaysStrict": true,
     "baseUrl": ".",
     "declaration": true,
-    "declarationDir": "typings",
+    "declarationDir": "./types",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext"],
     "module": "commonjs",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -18,8 +16,8 @@
     "noUnusedParameters": true,
     "outDir": ".",
     "strict": true,
-    "target": "es6",
-    "typeRoots": ["./typings", "./node_modules/@types"],
+    "target": "ES6",
+    "typeRoots": ["./types", "./node_modules/@types"],
     "types": ["node"]
   },
   "include": ["./src/**/*"],
