@@ -2,7 +2,6 @@ pre-commit:
   parallel: true
   commands:
     typecheck:
-<<<<<<< HEAD
       glob: '*.ts'
       run: npm run typecheck
     eslint:
@@ -11,10 +10,3 @@ pre-commit:
     prettier:
       glob: '*'
       run: npx --no-install prettier {staged_files} --write --ignore-unknown && git add {staged_files}
-=======
-      glob: "*.ts"
-      run: npm run typecheck
-    eslint:
-      glob: "*.{js,ts}"
-      run: npm run lint:src
->>>>>>> 31d3ec9... Replace Husky with LeftHook
