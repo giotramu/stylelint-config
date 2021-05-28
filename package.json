@@ -1,6 +1,6 @@
 {
   "name": "@giotramu/stylelint-config",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Shareable Stylelint config with great defaults. It supports PostCSS syntax, SASS language, and CSS in JS solutions.",
   "author": "giotramu <https://twitter.com/giotramu>",
   "homepage": "https://github.com/giotramu/stylelint-config#readme",
@@ -56,7 +56,7 @@
     "@types/stylelint": "^9.10.1",
     "del-cli": "^3.0.1",
     "eslint": "^7.27.0",
-    "eslint-config-contactlab": "^6.2.1",
+    "eslint-config-contactlab": "^6.3.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
