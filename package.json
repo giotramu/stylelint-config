@@ -52,7 +52,7 @@
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.5",
     "@giotramu/prettier-config": "^1.1.2",
-    "@types/node": "^15.6.1",
+    "@types/node": "^16.0.0",
     "@types/stylelint": "^13.13.0",
     "del-cli": "^4.0.0",
     "eslint": "^7.27.0",
